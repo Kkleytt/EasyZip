@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код подтверждения</title>
+    <style>
+        body {
+            background-color: {{ Color_0 }};
+            align-items: center;
+        }
+
+        .container {
+            max-width: 600px;
+            max-height: 300px;
+            padding: 20px;
+            align-items: center;
+            background-color: {{ Color_0 }};
+            border-radius: 50px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: {{ Color_2 }};
+            font-size: 40px;
+        }
+
+        .code {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        p {
+            color: {{ Color_2 }};
+            font-weight: 600;
+        }
+
+        .code p {
+            font-size: 40px;
+            background-color: {{ Color_2 }};
+            color: {{ Color_3 }};
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 15px;
+            border: solid 4px {{ Color_3 }};
+            display: flex;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: {{ Color_2 }}">Здравствуйте, {{User}}</h1>
+        <p>Используйте данный код для подтверждения своего аккаунта</p>
+        <div class="code">
+            <p>{{Number_1}}</p>
+            <p>{{Number_2}}</p>
+            <p>{{Number_3}}</p>
+            <p>{{Number_4}}</p>
+            <p>{{Number_5}}</p>
+            <p>{{Number_6}}</p>
+        </div>
+        <p>В случае, если не проводили никаких действий с вашим аккаунтом - проигнорируйте данное сообщение</p>
+    </div>
+</body>
+</html>
